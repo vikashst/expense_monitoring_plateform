@@ -1,0 +1,154 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+
+.content{
+  height: 153vh;
+}
+
+.navbar{
+  background-color: #7E909A !important; /* Because we are overwriting "Boots-strap" class, that is why we using "!important" for strictness. */
+}
+
+
+
+ /* transection page */
+ .filters{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 0 3px gray;
+ }
+
+
+ /* antd icons */
+
+ .switch-icons{
+  border: 1px solid rgba(0, 0, 0, 0.677);
+  border-radius: 5px;
+  padding: 10px 15px;
+ }
+
+ .anticon svg{
+  font-size: 20px;
+  cursor: pointer;
+ }
+
+ .active-icon{
+  color: black
+ }
+ .inactive-icon{
+  color: gray
+ }
+
+
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above the content */
+    
+}
+
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #101010;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+
+ /* Login-Register Page Styles (Note:- "className(i.e. login-page) is the same for both "login & register" page)  */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #547793 50%, #C1C9CC 100%); /* Gradient background */
+  color: #fff;
+}
+
+.login-page .ant-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+  padding: 40px;
+  border-radius: 16px; /* More rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+.login-page h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #6a11cb; /* Vibrant purple color for the heading */
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.login-page .ant-form-item-label > label {
+  font-weight: 600;
+  color: #333;
+}
+
+.login-page .ant-input {
+  height: 45px;
+  border-radius: 8px;
+  border: 2px solid #6a11cb; /* Purple border */
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.login-page .ant-input:focus, 
+.login-page .ant-input:hover {
+  border-color: #2575fc; /* Blue border on hover and focus */
+  box-shadow: none;
+}
+
+.login-page .ant-btn-primary {
+  width: 100%;
+  height: 45px;
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); /* Orange to yellow gradient button */
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.login-page .ant-btn-primary:hover {
+  background: linear-gradient(135deg, #ffd200 0%, #f7971e 100%); /* Reverse gradient on hover */
+}
+
+.login-page .d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-page .d-flex a {
+  color: #2575fc; /* Bright blue link color */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.login-page .d-flex a:hover {
+  color: #f7971e; /* Orange color on hover */
+  text-decoration: underline;
+}
