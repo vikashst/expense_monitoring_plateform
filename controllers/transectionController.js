@@ -33,7 +33,7 @@ const getAllTransection = async (req, res) => {
 const editTransection = async(req,res)=> {
     try{
         await transectionModel.findOneAndUpdate({_id:req.body.transectionId}, req.body.payload)
-        res.status(200).send('Edit Successfully');
+        res.status(200).send('Edited Successfully');
     }catch(error){
         console.log(error)
         res.status(500).json(error)
